@@ -7,9 +7,10 @@ Be creative! do whatever you want!
 - Start a web application
 - Import things from your .base module
 """
+from lox_python.lox import Lox
 
 
-def main():  # pragma: no cover
+def main(*args):  # pragma: no cover
     """
     The main function executes on commands:
     `python -m lox_python` and `$ lox_python `.
@@ -25,4 +26,9 @@ def main():  # pragma: no cover
         * List all available tasks
         * Run an application (Flask, FastAPI, Django, etc.)
     """
-    print("This will do something")
+    if len(args) > 1:
+        print("Usage: python -m lox_python [script]")
+    elif len(args) == 1:
+        Lox.run_file(args[0])
+    else:
+        Lox.run_prompt()

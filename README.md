@@ -1,3 +1,3 @@
 # Lox Python
 
-My attempt on implementation fo Lox from [Crafting Interpreters](https://craftinginterpreters.com/scanning.html)
+My attempt on implementation of Lox from [Crafting Interpreters](https://craftinginterpreters.com/scanning.html)
